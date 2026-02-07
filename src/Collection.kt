@@ -49,4 +49,17 @@ fun main(){
     solarsystemset.remove("mars")
     println(solarsystemset.size)
     println(solarsystemset.contains("mars"))
+
+
+    val solarsystemmutmap = mutableMapOf("mercury" to 0, "venus" to 0, "mars" to 2, "earth" to 1,"jupiter" to 79, "saturn" to 82, "uranus" to 27, "neptune" to 14, "pluto" to 29)
+    println(solarsystemmutmap.size)
+    solarsystemmutmap["mars"] = 5
+    println(solarsystemmutmap.size)
+    println(solarsystemmutmap["earth"])
+   println(solarsystemmutmap.get("pandora"))
+   solarsystemmutmap.remove("venus")
+    println(solarsystemmutmap.size)
+    solarsystemmutmap["saturn"] = 78
+    println(solarsystemmutmap["saturn"])
+
 }
