@@ -40,4 +40,13 @@ fun main(){
     println(solarsystemmutlist.contains("mars"))
     println("Pandora" in solarsystemmutlist)
 
+    val solarsystemset = mutableSetOf("mercury", "venus", "mars", "earth","jupiter", "saturn", "uranus", "neptune", "pluto")
+    println(solarsystemset.size)
+    println(solarsystemset.contains("mars"))
+    println("mars" in solarsystemset)
+    solarsystemset.add("pandora")
+    println(solarsystemset.size)
+    solarsystemset.remove("mars")
+    println(solarsystemset.size)
+    println(solarsystemset.contains("mars"))
 }
