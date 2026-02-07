@@ -84,4 +84,8 @@ fun main(){
 
     val totalprice = cookies.fold(0.0) {total, cookie -> total + cookie.price}
     println("total price: $totalprice")
+
+    val alphamenu = cookies.sortedBy { it.name }
+    println("меню в алфавитном порядке")
+    alphamenu.forEach { println(it.name) }
 }
